@@ -12,7 +12,7 @@ const Mirror = () => {
   const [mirrorMode, setMirrorMode] = useState('virtual-try-on');
   const [stream, setStream] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
-  const [aiSuggestions] = useState([]);
+  const [aiSuggestions, setAiSuggestions] = useState([]);
   const [sessionHistory, setSessionHistory] = useState([]);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [bodyMeasurements, setBodyMeasurements] = useState(null);
@@ -30,7 +30,7 @@ const Mirror = () => {
   
   // Social sharing state
   const [showShareModal, setShowShareModal] = useState(false);
-  const [currentPhotoBlob] = useState(null);
+  const [currentPhotoBlob, setCurrentPhotoBlob] = useState(null);
   const { showSuccess, showError, showInfo } = useNotification();
   
   // Mobile and gesture features

@@ -1,0 +1,459 @@
+[
+  {
+    "id": "TC001",
+    "title": "User Registration and Consent Flow",
+    "description": "Verify that users can successfully register, provide privacy consent, and configure preferences ensuring GDPR compliance.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the registration page."
+      },
+      {
+        "type": "action",
+        "description": "Input valid user details and submit."
+      },
+      {
+        "type": "action",
+        "description": "Provide consent for data collection and privacy policy."
+      },
+      {
+        "type": "action",
+        "description": "Configure user preferences."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm account creation and successful consent recording."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that default preferences are saved and editable."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Trip Logging via Automatic GPS Detection",
+    "description": "Validate automatic trip logging triggers at correct trip start and end times with accurate geolocation using Leaflet maps.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enable GPS and start traveling."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify trip start is automatically detected and logged with timestamp and geolocation."
+      },
+      {
+        "type": "action",
+        "description": "Stop traveling."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify trip end time is captured and trip is saved correctly."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that trip path is correctly visualized on Leaflet map."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Manual Trip Entry and Mode Selection",
+    "description": "Ensure users can manually enter trips with mode (walk, cycle, car, etc.) and purpose correctly selected and saved.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to manual trip entry form."
+      },
+      {
+        "type": "action",
+        "description": "Input trip details including start/end locations, times."
+      },
+      {
+        "type": "action",
+        "description": "Select travel mode and trip purpose."
+      },
+      {
+        "type": "action",
+        "description": "Submit the trip entry."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the trip is recorded with correct attributes."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "AI-Powered Mode and Purpose Detection Accuracy",
+    "description": "Validate that AI correctly classifies trip modes and predicts trip purposes using historical and contextual data.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate user trip data with various travel modes and purposes."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that AI mode detection matches expected modes (walk, bike, car, bus, metro)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify predicted trip purposes match simulated trip context (work, school, leisure, shopping)."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "User Consent Management and Privacy Enforcement",
+    "description": "Test that user privacy consents are stored, effectively enforced, and data is anonymized ensuring GDPR compliance.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Modify user privacy consent settings."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that data collection behavior changes according to consent."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that stored user data is anonymized and inaccessible without consent."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Trip Diary Multimedia Upload and Editing",
+    "description": "Validate that users can upload photos, add notes to trip diary entries, edit them, and export diary content correctly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open trip diary entry interface."
+      },
+      {
+        "type": "action",
+        "description": "Upload images and enter text notes for a trip."
+      },
+      {
+        "type": "action",
+        "description": "Edit uploaded content and save changes."
+      },
+      {
+        "type": "action",
+        "description": "Export diary data to supported formats."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify images and notes are saved and displayed correctly."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify exported files contain all diary content accurately."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Booking Process for Hotels and Trains",
+    "description": "Test end-to-end booking workflow for hotel and train reservations including search, selection, confirmation, and error handling.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Search for hotels using valid criteria."
+      },
+      {
+        "type": "action",
+        "description": "Select a hotel and room type."
+      },
+      {
+        "type": "action",
+        "description": "Proceed to booking confirmation and payment."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify booking confirmation details are displayed and stored."
+      },
+      {
+        "type": "action",
+        "description": "Repeat the above steps for train booking."
+      },
+      {
+        "type": "assertion",
+        "description": "Check error handling for invalid bookings or failed provider integration."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Comprehensive Analytics Dashboard Visualization",
+    "description": "Verify analytics dashboard displays accurate timelines, heatmaps, and traffic pattern visuals with real-time data updates.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load analytics dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm timeline visualizations match trip data."
+      },
+      {
+        "type": "assertion",
+        "description": "Check heatmap displays correct geo-locations and intensity."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate traffic pattern analytics updates properly with new data."
+      },
+      {
+        "type": "action",
+        "description": "Export analytics data from the dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify exported reports are complete and correctly formatted."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Emergency SOS Alert Trigger and Logging",
+    "description": "Ensure that SOS alerts can be triggered via the app interface, backend logs the event, and notifications are sent correctly.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Trigger Emergency SOS through the app UI."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify backend logs the SOS event with correct user and timestamp."
+      },
+      {
+        "type": "assertion",
+        "description": "Check notifications or alerts are sent to predefined contacts or services."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Gamification Points, Badges, and Leaderboard Updates",
+    "description": "Validate that user actions correctly award points and badges, and leaderboard rankings update in real-time.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Perform activities that earn points and badges, such as logging trips and diary entries."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm points and badges are awarded correctly."
+      },
+      {
+        "type": "action",
+        "description": "Access leaderboard after updates."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user rankings reflect recent point changes."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Offline Support and PWA Functionality",
+    "description": "Confirm that the application supports offline usage with data persistence and sync upon reconnection via PWA implementation.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access the app with internet connection and cache resources."
+      },
+      {
+        "type": "action",
+        "description": "Switch device to offline mode."
+      },
+      {
+        "type": "assertion",
+        "description": "Interact with core functionalities like viewing trip logs and editing diaries without errors."
+      },
+      {
+        "type": "action",
+        "description": "Make offline changes such as adding diary entries."
+      },
+      {
+        "type": "action",
+        "description": "Restore internet connection."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify offline changes are synchronized successfully to backend."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Companion Travel Logging via Bluetooth Detection",
+    "description": "Validate that companion tracking accurately detects and logs co-travelers using Bluetooth or detection methods and associates trips accordingly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enable companion tracking feature and pair Bluetooth devices."
+      },
+      {
+        "type": "action",
+        "description": "Start a trip with companions present."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify companions are detected and linked to the trip."
+      },
+      {
+        "type": "action",
+        "description": "End the trip."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm companion trip data is saved and visible in travel logs."
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "API Endpoint Authentication and Authorization",
+    "description": "Ensure all backend API endpoints require valid authentication tokens and enforce authorization rules.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Attempt accessing API endpoints without authentication token."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm access is denied with appropriate error response."
+      },
+      {
+        "type": "action",
+        "description": "Access endpoints with valid authentication token."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify access is granted according to user roles and permissions."
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "Error Handling on Booking Service Provider Failures",
+    "description": "Test system behavior and user notifications when hotel or train booking service providers are unavailable or return errors.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate backend booking provider failure during hotel booking."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user sees clear error message and booking is aborted gracefully."
+      },
+      {
+        "type": "action",
+        "description": "Repeat simulation for train booking."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure no partial bookings occur and error logs are recorded."
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Data Export Formats and Completeness",
+    "description": "Validate data export functionality produces complete trip and analytics data in all supported formats without loss or corruption.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Request data export in each supported format (e.g., CSV, JSON, PDF)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify exported files contain full and accurate trip and analytics details."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm files open successfully in respective applications."
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Frontend and Backend Integration Stability",
+    "description": "Perform integration testing to ensure React frontend interacts correctly with Django REST backend services for all key features.",
+    "category": "integration",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Execute typical user flows including login, trip logging, diary updates, booking, and analytics."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify data consistency between frontend display and backend storage."
+      },
+      {
+        "type": "assertion",
+        "description": "Check for proper response handling and no frontend errors or crashes."
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Notification System Feedback on User Actions",
+    "description": "Check that toast notifications correctly appear for success, error, and informational user actions across the application.",
+    "category": "ui",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Perform actions like trip save, booking confirm, diary upload."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that an appropriate toast notification appears each time."
+      },
+      {
+        "type": "action",
+        "description": "Trigger known error conditions, such as invalid form data."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm error notifications are displayed promptly."
+      }
+    ]
+  }
+]

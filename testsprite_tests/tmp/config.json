@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "Stylin",
+    "projectPath": "C:\\Users\\ritsa\\projects\\Stylin",
+    "testIds": [],
+    "additionalInstruction": "",
+    "envs": {
+      "API_KEY": "sk-user-nxmbahzGwJtHaWrYH9cGMv8Ahz8QuADSVZlTW3eM2nZ2dicTWQd-3pmHEB5-1-JSBqwQOpM3q668KJIXoLLBp8fPQsbH0BI9mTeKQalpw5uwy87LNiRXcKcfolzDIPAUcdE"
+    }
+  },
+  "proxy": "http://6649d4f6-bd3b-428d-a39a-ea395f3b98dd:zsCYoJAw4nyeCx8sU0s4eTp9yhNSAdWp@tun.testsprite.com:8080"
+}
