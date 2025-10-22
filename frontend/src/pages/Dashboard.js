@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [weather, setWeather] = useState({ temp: '22°C', condition: 'Sunny' });
+  const [weather] = useState({ temp: '22°C', condition: 'Sunny' });
 
   useEffect(() => {
     const timer = setInterval(() => {

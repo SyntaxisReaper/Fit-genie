@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNotification } from '../contexts/NotificationContext';
 
 const Contact = () => {
-  const { showSuccess, showError, showInfo } = useNotification();
+  const { showSuccess, showError } = useNotification();
   
   // Form states
   const [contactForm, setContactForm] = useState({

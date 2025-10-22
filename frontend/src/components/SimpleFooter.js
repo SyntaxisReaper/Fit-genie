@@ -20,15 +20,15 @@ const SimpleFooter = () => {
               AI-powered smart mirror for personalized fashion and style analysis.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <button className="text-gray-400 hover:text-purple-400 transition-colors">
                 🐦 Twitter
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              </button>
+              <button className="text-gray-400 hover:text-purple-400 transition-colors">
                 📷 Instagram
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              </button>
+              <button className="text-gray-400 hover:text-purple-400 transition-colors">
                 📘 Facebook
-              </a>
+              </button>
             </div>
           </div>
           
@@ -62,8 +62,8 @@ const SimpleFooter = () => {
             <div className="space-y-2">
               <Link to="/contact" className="block text-gray-300 hover:text-purple-400 transition-colors">💬 Contact Us</Link>
               <a href="mailto:hello@stylinapp.com" className="block text-gray-300 hover:text-purple-400 transition-colors">📧 Email Support</a>
-              <a href="#" className="block text-gray-300 hover:text-purple-400 transition-colors">❓ FAQ</a>
-              <a href="#" className="block text-gray-300 hover:text-purple-400 transition-colors">📚 Documentation</a>
+              <button className="block text-gray-300 hover:text-purple-400 transition-colors">❓ FAQ</button>
+              <button className="block text-gray-300 hover:text-purple-400 transition-colors">📚 Documentation</button>
             </div>
           </div>
         </div>

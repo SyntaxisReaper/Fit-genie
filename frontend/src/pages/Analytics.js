@@ -36,14 +36,6 @@ const Analytics = () => {
     { color: 'Other', percentage: 7, count: 3 }
   ];
 
-  const monthlyData = [
-    { month: 'Jan', outfits: 32, new_items: 8 },
-    { month: 'Feb', outfits: 28, new_items: 5 },
-    { month: 'Mar', outfits: 35, new_items: 12 },
-    { month: 'Apr', outfits: 42, new_items: 7 },
-    { month: 'May', outfits: 38, new_items: 9 },
-    { month: 'Jun', outfits: 45, new_items: 15 }
-  ];
 
   const sustainabilityMetrics = {
     cost_per_wear: 12.50,

@@ -12,7 +12,6 @@ export const useBodyAnalysis = () => {
   
   const poseDetectorRef = useRef(null);
   const bodyPixModelRef = useRef(null);
-  const analysisCanvasRef = useRef(null);
 
   // Initialize TensorFlow.js models
   useEffect(() => {
@@ -113,7 +112,6 @@ export const useBodyAnalysis = () => {
 
   const calculateBodyMeasurements = (keypoints, videoElement) => {
     // Get video dimensions for scaling
-    const videoWidth = videoElement.videoWidth || videoElement.width;
     const videoHeight = videoElement.videoHeight || videoElement.height;
     
     // Key body points

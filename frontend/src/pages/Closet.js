@@ -7,7 +7,6 @@ const Closet = () => {
   const [showAddModal, setShowAddModal] = useState(false);
   const [clothingItems, setClothingItems] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [newItem, setNewItem] = useState({
     name: '',
     category: '',
@@ -37,7 +36,6 @@ const Closet = () => {
 
   const loadClothingItems = async () => {
     try {
-      setLoading(true);
       const items = await apiService.getClothingItems(selectedCategory);
       setClothingItems(items);
       
@@ -54,7 +52,7 @@ const Closet = () => {
       setCategories(defaultCategories);
       showError('Unable to load items from server. Using offline data.');
     } finally {
-      setLoading(false);
+      // Loading state removed
     }
   };
 
