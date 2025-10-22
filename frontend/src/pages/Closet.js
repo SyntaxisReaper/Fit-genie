@@ -107,16 +107,16 @@ const Closet = () => {
     }
   };
 
-  const handleDeleteItem = async (itemId) => {
-    try {
-      await apiService.deleteClothingItem(itemId);
-      setClothingItems(prev => prev.filter(item => item.id !== itemId));
-      showSuccess('Item removed from your closet');
-    } catch (error) {
-      console.error('Error deleting item:', error);
-      showError('Failed to remove item. Please try again.');
-    }
-  };
+  // const handleDeleteItem = async (itemId) => {
+  //   try {
+  //     await apiService.deleteClothingItem(itemId);
+  //     setClothingItems(prev => prev.filter(item => item.id !== itemId));
+  //     showSuccess('Item removed from your closet');
+  //   } catch (error) {
+  //     console.error('Error deleting item:', error);
+  //     showError('Failed to remove item. Please try again.');
+  //   }
+  // };
 
   // Default fallback data
   const defaultClothingItems = [
