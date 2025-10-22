@@ -1,0 +1,86 @@
+{
+  "short_name": "Fit Genie",
+  "name": "Fit Genie - AI Smart Wardrobe",
+  "description": "Your AI-powered smart wardrobe assistant with virtual try-on capabilities",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "logo512.png", 
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#8B5CF6",
+  "background_color": "#1F2937",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "fashion", "shopping"],
+  "lang": "en",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Smart Mirror",
+      "short_name": "Mirror",
+      "description": "Open Smart Mirror with camera",
+      "url": "/mirror",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Closet",
+      "short_name": "Closet", 
+      "description": "Browse your wardrobe",
+      "url": "/closet",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "AI Stylist",
+      "short_name": "Stylist",
+      "description": "Get outfit recommendations",
+      "url": "/stylist",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Fit Genie Dashboard"
+    },
+    {
+      "src": "screenshot-narrow.png", 
+      "sizes": "640x1136",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Fit Genie Mobile"
+    }
+  ]
+}
